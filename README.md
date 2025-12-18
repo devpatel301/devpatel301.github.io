@@ -14,7 +14,7 @@ This is my personal portfolio website where I showcase my projects, skills, and 
 
 ## Tech Stack
 
-Built with plain HTML, CSS, and JavaScript — keeping it simple and fast.
+Built with plain HTML, CSS, and JavaScript.
 
 ## Get in Touch
 
