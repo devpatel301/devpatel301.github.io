@@ -1,9 +1,29 @@
-# My Portfolio Website that I made for ISS Assignment 3
+# Dev Patel - Personal Portfolio
 
-## This includes information about me, my birthplace, my non-existant skills and insignificant achievements along with a random text analyzer because it was in the question.
+Hey there! 👋
 
-## Assumptions:
-- Combined all of the things into 1 page because there was not much content to put if I did it on individual webpages. Also my webpage looked good as a single page and I didn't want to ruin it.
-- Q2: clicks/views timestamp part is only visible in Console of the webpage (press F12 to open).
-- The tokenization and letter count etc part (Q3) is merged into the Text Analyzer section.
-- The Text Analyzer can "analyze" texts for number of words less than or equal to 10k as well as greater than 10k. (Even I don't know the upper limit. The site crashed when i went over 18 million words)
+This is my personal portfolio website where I showcase my projects, skills, and a bit about myself. I'm a Computer Science student at IIIT Hyderabad, actively looking for internship opportunities.
+
+## What's Inside
+
+- **About Me** - A quick intro to who I am
+- **Education** - My academic journey so far
+- **Skills** - Technologies I work with
+- **Projects** - Things I've built (with more coming soon!)
+- **Contact** - Ways to reach me
+
+## Tech Stack
+
+Built with plain HTML, CSS, and JavaScript — keeping it simple and fast.
+
+## Get in Touch
+
+- 📧 Email: devpatel0262@gmail.com
+- 💼 LinkedIn: [devpatel301](https://www.linkedin.com/in/devpatel301)
+- 🐙 GitHub: [devpatel301](https://github.com/devpatel301)
+
+Feel free to explore the site and reach out if you'd like to connect!
+
+---
+
+*Thanks for stopping by!*
