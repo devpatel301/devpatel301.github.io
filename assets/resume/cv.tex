@@ -1,0 +1,228 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fontawesome}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item \small #1\vspace{-3pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\newcommand{\extlinkicon}{\,\raisebox{0.05ex}{\footnotesize\faExternalLinkSquare}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\begin{center}
+  \textbf{\Huge \scshape Dev Patel} \\ \vspace{1pt}
+  \small (+91) 8000722744 $|$ \href{mailto:devpatel0262@gmail.com}{\underline{devpatel0262@gmail.com}\extlinkicon} \\
+  \small \mbox{\href{https://linkedin.com/in/devpatel301}{\underline{linkedin.com/in/devpatel301}\extlinkicon} $|$ \href{https://github.com/devpatel301}{\underline{github.com/devpatel301}\extlinkicon} $|$ \href{https://devpatel301.github.io}{\underline{devpatel301.github.io}\extlinkicon}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {International Institute of Information Technology, Hyderabad}{Hyderabad, India}
+      % {B.Tech in Computer Science (CGPA: 7.88)}{July 2024 -- Present}
+      {B.Tech in Computer Science}{July 2024 -- Present}
+    % \resumeSubheading
+    %   {Riverdale Academy, Surat}{Surat, Gujarat}
+    %   {Class XII - 91.5\%}{June 2022}
+    % \resumeSubheading
+    %   {Bhulka Bhavan, Surat}{Surat, Gujarat}
+    %   {Class X - 94.67\%}{June 2020}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {S-Learn (Learning Management System) $|$ \href{https://github.com/aryamirani/dass_shankar/}{\extlinkicon}}{January 2026 -- April 2026}
+    {Shankar Foundation}{Hyderabad, India}
+    \resumeItemListStart
+      \resumeItem{Led a 5-member team to gather requirements with Shankar Foundation to define 3 core user flows for a digital learning platform.}
+      \resumeItem{Redesigned 70+ pages of static educational content into interactive, gamified web modules helping 100+ students.}
+      % \resumeItem{Implemented 15+ accessible interaction components tailored for differently-abled learners, improving accessibility for 100+ students.}
+      \resumeItem{Deployed production-ready releases on Vercel and SPCRC servers (IIIT Hyderabad) with role-based access for teachers, parents, and admins.}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+   
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Splitco (Expense Manager)} $|$ \href{https://github.com/shaurya-kochar/splitco/}{\extlinkicon}}{December 2025 -- Present}
+          \resumeItemListStart
+            \resumeItem{Built a 3-tier group expense splitting application using React, Node.js, and MongoDB.}
+            \resumeItem{Reduced settlement complexity to at most n-1 edges using graph-based debt netting across n transactions.}
+            \resumeItem{Designed a responsive UI with real-time updates across 4 modules: groups, expenses, balances, and settlements.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Agri-Bhasha Toolkit} $|$ Megathon 2025 $|$ \href{https://github.com/devpatel301/agri-bhasha-test-frontend}{\extlinkicon}}{October 2025}
+          \resumeItemListStart
+            % \resumeItem{Engineered a multilingual agricultural assistant using Bhashini API with OCR-based extraction for 22 Indian languages.}
+            % \resumeItem{Shipped a 3-service deployment stack (frontend, backend, database) across Vercel and Render.}
+            \resumeItem{Collaborated with a 5-person team to engineer a multilingual agricultural assistant using Bhashini API with OCR-based extraction for 22 Indian languages.}
+            \resumeItem{Shipped a 3-service deployment stack (frontend, backend, database) across Vercel and Render.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Docs++ (Distributed Document Editor)} $|$ \href{https://github.com/devpatel301/Docs-Plus-Plus}{\extlinkicon}}{October 2025 -- November 2025}
+          \resumeItemListStart
+            \resumeItem{Built a collaborative document editor supporting 10+ concurrent users with sentence-level locking over TCP sockets.}
+            \resumeItem{Reduced metadata lookup latency to sub-1ms using LRU caching and Trie-based indexing.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{UniGate (Campus Security Management)} $|$ \href{https://github.com/aryamirani/UniGate}{\extlinkicon}}{January 2026}
+          \resumeItemListStart
+            \resumeItem{Coordinated with campus authorities to develop a QR-based campus gate system with 3-role workflows (students, guards, admins) and leave tracking via IIIT CAS SSO.}
+            \resumeItem{Integrated Supabase Realtime DB for live approvals and WhatsApp Web.js for automated delivery and overstay notifications.}
+          \resumeItemListEnd
+          \resumeProjectHeading
+          {\textbf{Smart Glove} $|$ \href{https://smart-glove.web.app/}{\extlinkicon}}{February 2025 -- April 2025}
+          \resumeItemListStart
+            \resumeItem{Designed an IoT-based smart glove using IMU, Flex sensor, and ESP32 to support 5+ gesture-driven commands.}
+            \resumeItem{Evaluated gesture-to-command mappings through iterative testing achieving 100\% accuracy, providing accessibility for Smart Home/Device control.}
+          \resumeItemListEnd
+        % \resumeProjectHeading
+        %   {\textbf{C-Shell (Unix Shell)} $|$ \emph{Systems Project} $|$ \href{https://github.com/devpatel301/C-Shell}{\underline{Link}}}{}
+        %   \resumeItemListStart
+        %     \resumeItem{Developed a Unix-like shell with AST-based parsing, pipelines, and job control.}
+        %     \resumeItem{Added 3 core controls: I/O redirection, background jobs, and signal handling for process management.}
+        %   \resumeItemListEnd
+        
+    \resumeSubHeadingListEnd
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C, C++, Python, HTML/CSS, JavaScript, TypeScript, SQL, Bash, x86-64 Assembly, Kotlin} \\
+     \textbf{Frameworks}{: React, Vite, Django, Flask, Node.js, Express.js} \\
+     \textbf{Tools \& Platforms}{: Docker, Git, GitHub, Wireshark, Postman, LaTeX, Figma, MongoDB, MySQL, PostgreSQL} \\
+     \textbf{Libraries}{: NumPy, Pandas, Matplotlib} \\
+    %  \textbf{Domains}{: Full Stack Dev, AI/ML, Neural Networks, Deep Learning, Cybersecurity}
+    }}
+ \end{itemize}
+
+
+%-----------ACHIEVEMENTS-----------
+\section{Achievements}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\small Top 20 Finalist, Megathon 2025 (Agri-Bhasha Toolkit) -- IIIT Hyderabad's largest hackathon with 1000+ participants.}{}
+    \resumeProjectHeading
+      {\small Solved 50\%+ problems at Atlassian Fasttrack Hackathon.}{}
+    \resumeProjectHeading
+      {\small Marketing and Social Media Head, The Gaming Club (largest club at IIIT Hyderabad).}{}
+      \resumeProjectHeading
+      {\small Coordinated cultural activities for interhouse competitions as a captain of Prithvi House, Cultural Council.}{}
+    \resumeProjectHeading
+      {\small JEE Mains 2024 - AIR 1139 (Top 0.1\%) $|$ JEE Advanced 2024 - AIR 4199 (Top 2\%).}{}
+  \resumeSubHeadingListEnd
+
+  %-----------LEADERSHIP ROLES-----------
+% \section{Leadership \& Activities}
+%   \resumeSubHeadingListStart
+%     \resumeProjectHeading
+%         {\textbf{House Captain, Prithvi House} $|$ {IIIT Hyderabad}}{2026 -- Present}
+%         \resumeItemListStart
+%           \resumeItem{Leading students across dance, music, skit, and sports in interhouse competitions.}
+%         \resumeItemListEnd
+%     \resumeProjectHeading
+%         {\textbf{Marketing \& Social Media Head} $|$ {The Gaming Club}}{January 2026 -- Present}
+%         \resumeItemListStart
+%           \resumeItem{Led marketing strategy for IIIT Hyderabad's largest club, managing campaigns and community engagement initiatives.}
+%         \resumeItemListEnd
+%   \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}

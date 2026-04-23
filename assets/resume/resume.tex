@@ -1,0 +1,131 @@
+\newcommand{\RNum}[1]{\uppercase\expandafter{\romannumeral #1\relax}}
+\PassOptionsToPackage{dvipsnames}{xcolor}
+\documentclass[10pt,a4paper]{altacv}
+
+% Setup page layout
+\geometry{left=1cm,right=1cm,top=1.25cm,bottom=1.25cm,columnsep=1.2cm}
+
+\usepackage{paracol} 
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[default]{lato}
+
+\definecolor{Navy}{HTML}{000080}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{Navy}
+\colorlet{accent}{Navy}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Tighter spacing for the header info so links fit on one line
+\renewcommand{\printinfo}[2]{% icon, text/link
+  \mbox{\textcolor{accent}{\normalfont #1}\hspace{0.35em}#2\hspace{0.9em}}%
+}
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+\usepackage[colorlinks]{hyperref}
+
+\begin{document}
+
+\name{Dev Patel}
+\tagline{International Institute of Information Technology, Hyderabad - 500032}
+\personalinfo{%
+  \printinfo{\emailsymbol}{\href{mailto:devpatel0262@gmail.com}{devpatel0262@gmail.com}}
+  \printinfo{\phonesymbol}{(+91) 8000722744}
+  \printinfo{\linkedinsymbol}{\href{https://linkedin.com/in/devpatel301}{linkedin.com/in/devpatel301}}
+  \printinfo{\githubsymbol}{\href{https://github.com/devpatel301}{github.com/devpatel301}}
+  \printinfo{\homepagesymbol}{\href{https://devpatel301.github.io}{devpatel301.github.io}}
+}
+
+\makecvheader
+
+% Set the column ratio (60% Main, 40% Sidebar)
+\columnratio{0.6}
+
+\begin{paracol}{2}
+
+% ----- LEFT COLUMN (MAIN) -----
+\vspace{-1\baselineskip} % lift left column so Projects lines up with Skills
+\cvsection{Projects}
+
+\cvevent{Splitco (Expense Manager)}{\textbf{\color{accent}Personal Project} \href{https://github.com/shaurya-kochar/splitco/}{\color{accent}\homepagesymbol}}{}{}
+\begin{itemize}
+\item Built a 3-tier group expense splitting application using React, Node.js, and MongoDB.
+\item Implemented debt simplification using a graph-based netting approach, cutting settlement edges from $n$ transactions to at most $n-1$.
+\item Designed a responsive UI with real-time updates across 4 core modules: groups, expenses, balances, and settlements.
+\end{itemize}
+\divider
+\medskip
+
+\cvevent{Agri-Bhasha Toolkit}{\textbf{\color{accent}Hackathon Project} \href{https://github.com/devpatel301/agri-bhasha-test-frontend}{\color{accent}\homepagesymbol}}{}{}
+\begin{itemize}
+\item Developed a multilingual agricultural assistant using Bhashini API with OCR-based extraction and translation support for 22 Indian languages.
+\item Shipped a 3-service deployment stack (frontend, backend, database) across Vercel and Render.
+\end{itemize}
+\divider
+\medskip
+
+\cvevent{Docs++ (Distributed Document Editor)}{\textbf{\color{accent}Networks Course Project} \href{https://github.com/devpatel301/Docs-Plus-Plus}{\color{accent}\homepagesymbol}}{}{}
+\begin{itemize}
+\item Created a collaborative editor supporting 10+ concurrent users with sentence-level locking over TCP sockets.
+\item Reduced metadata lookup latency to sub-1ms using LRU caching and Trie-based indexing.
+\end{itemize}
+\divider
+\medskip
+
+\cvevent{UniGate (Campus Gate Management)}{\textbf{\color{accent}Hackathon Project} \href{https://github.com/aryamirani/UniGate}{\color{accent}\homepagesymbol}}{}{}
+\begin{itemize}
+\item Collaborated a QR-based campus gate system with 3-role workflows (students, guards, admins) and leave tracking via IIIT CAS SSO.
+\item Integrated Supabase Realtime DB for live approvals and WhatsApp Web.js for 2 automated notification paths: delivery updates and overstay alerts.
+\end{itemize}
+
+\cvsection{Achievements}
+\begin{itemize}
+\item \textbf{Top 20 Finalist} in Megathon 2025 (IIIT Hyderabad's largest student hackathon with 1000+ participants).
+\item JEE Mains 2024 - AIR 1139 (Top 0.1\% among 1.4 million candidates).
+\item JEE Advanced 2024 - AIR 4199 (Top 2\% of qualified candidates).
+\end{itemize}
+
+% ----- RIGHT COLUMN (SIDEBAR) -----
+\switchcolumn
+
+% \raggedright prevents awkward spacing in narrow columns
+\raggedright
+\vspace{-1\baselineskip}
+
+\cvsection{Skills}
+
+\textbf{Languages \& Technologies}\\
+\cvtag{C} \cvtag{C++} \cvtag{Python} \cvtag{JavaScript} \cvtag{TypeScript} \cvtag{HTML/CSS} \cvtag{SQL} \cvtag{Bash} \cvtag{x86-64 Assembly} \cvtag{React} \cvtag{Vite} \cvtag{NodeJS} \cvtag{ExpressJS} \cvtag{MongoDB} \cvtag{MySQL} \cvtag{PostgreSQL} \cvtag{Docker} \cvtag{Git} \cvtag{Wireshark} \cvtag{Postman} \cvtag{NumPy} \cvtag{Pandas} \cvtag{Matplotlib} \cvtag{OM2M} \cvtag{LaTeX}
+
+\divider\medskip
+
+\textbf{Domains \& Soft Skills}\\
+\cvtag{AI/ML} \cvtag{Neural Networks} \cvtag{Deep Learning} \cvtag{Cybersecurity} \cvtag{Security} \cvtag{Quantum Algorithms} \cvtag{Content Writing} \cvtag{Public Speaking} \cvtag{Collaborative Skills}
+
+\cvsection{Education}
+
+\cvevent{B.Tech in Computer Science}{CGPA: 7.88}{July 2024 -- Present}{IIIT Hyderabad}
+\vspace{-4pt}
+
+\cvevent{Class \RNum{12}}{91.5\%}{June 2022}{Riverdale Academy, Surat}
+\vspace{-4pt}
+
+\cvevent{Class \RNum{10}}{94.67\%}{June 2020}{Bhulka Bhavan, Surat}
+
+\cvsection{Other Projects}
+\begin{itemize}
+  \item \textbf{C-Shell} - Unix shell with AST-based parsing, pipelining, and 3 core controls: redirection, job control, and signal handling.
+    % xv6 projects removed to improve layout
+  \item \textbf{Smart Glove Simulation} - IoT-based gesture recognition supporting 5+ hand gestures for hands-free device control.
+  \item \textbf{Obstacle Avoidance Robot} - Autonomous navigation using 2 sensor streams (IMU + ultrasonic) for obstacle detection.
+    % xv6 scheduler removed
+  \item \textbf{TCP over UDP} - Reliable transport protocol with sliding window, 3-way handshake, 4-way teardown, and retransmissions.
+  \item \textbf{C-Shark} - Terminal packet analyzer using libpcap with BPF-filtered capture and 6 protocol parsers (IPv4, IPv6, TCP, UDP, DNS, Ethernet).
+\end{itemize}
+
+\end{paracol}
+
+\end{document}
