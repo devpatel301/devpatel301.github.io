@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,15 +17,15 @@
     <nav class="navbar">
         <div class="nav-container">
             <button class="nav-toggle" aria-label="Toggle navigation">
-                <span class="hamburger"></span>
+                Menu <span class="arrow">▼</span>
             </button>
             <ul class="nav-links">
                 <li><a href="#home" class="nav-link active">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
                 <!-- <li><a href="#birthplace" class="nav-link">Birthplace</a></li> -->
                 <li><a href="#education" class="nav-link">Education</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
                 <!-- <li><a href="#text-analyzer" class="nav-link">Text Analyzer</a></li> -->
             </ul>
@@ -33,7 +33,7 @@
     </nav>
 
     <!-- Home Section -->
-    <section id="home" class="section">
+    <section id="home" class="section reveal">
         <div class="content-container">
             <div class="home-greeting">
                 <h2>Hello!</h2>
@@ -44,13 +44,13 @@
             </div>
             <p class="home-description">Currently pursuing B.Tech. in Computer Science at IIIT-H. Aspiring to become a Full-stack developer.</p>
             <div class="social-links">
-                <a href="https://github.com/devpatel301" target="_blank" class="social-link">
+                <a href="https://github.com/devpatel301" target="_blank" rel="noopener noreferrer" class="social-link">
                     GitHub
                 </a>
-                <a href="https://www.linkedin.com/in/devpatel301" target="_blank" class="social-link">
+                <a href="https://www.linkedin.com/in/devpatel301" target="_blank" rel="noopener noreferrer" class="social-link">
                     LinkedIn
                 </a>
-                <a href="assets/cv.pdf" download class="social-link">
+                <a href="assets/resume/cv.pdf" download class="social-link">
                 <img src="assets/download_button.svg" alt="Download" width="24" height="24">
                     Resume
                 </a>
@@ -59,9 +59,9 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="section">
+    <section id="about" class="section reveal">
         <div class="section-tab about-tab">
-            <img src="assets/person.svg" alt="Person" widht="24" height="24">
+            <img src="assets/person.svg" alt="Person" width="24" height="24">
             <h2>ABOUT</h2>
         </div>
         <div class="section-content about-bg">
@@ -69,8 +69,8 @@
                 <div class="about-layout">
                     <div class="about-text">
                         <p>I'm an enthusiastic first-year Computer Science student at International Institute of Information Technology, Hyderabad. Though early in my journey, I have a growing passion for technology and software development.</p>
-                        <p>My interests span across web development, app creation, and game design – fields where I can blend technical learning with my natural inclination toward user-friendly design.</p>
-                        <p>I am eager to apply my creative approach via collaborative proejects.</p>
+                        <p>My interests span across web development, app creation, machine learning, and game design – fields where I can blend technical learning with my natural inclination toward user-friendly design.</p>
+                        <p>I am eager to apply my creative approach via collaborative projects.</p>
                     </div>
                     <div class="profile-container">
                         <img src="assets/profile.png" alt="My Profile" class="profile-image">
@@ -115,9 +115,9 @@
     -->
 
     <!-- Education Section -->
-    <section id="education" class="section">
+    <section id="education" class="section reveal">
         <div class="section-tab education-tab">
-            <img src="assets/education.svg" alt="Education" widht="28" height="28">
+            <img src="assets/education.svg" alt="Education" width="28" height="28">
             <h2>EDUCATION</h2>
         </div>
         <div class="section-content education-bg">
@@ -125,10 +125,10 @@
                 <div class="education-grid">
                     <div class="education-card">
                         <h3>College</h3>
-                        <p class="education-content">International Institue of Information Technology, Hyderabad</p>
+                        <p class="education-content">International Institute of Information Technology, Hyderabad</p>
                         <p class="education-content"> <b>Degree:</b> Bachelor of Technology</p>
                         <p class="education-content"><b>Expected Graduation:</b> 2028</p>
-                        <p><b>Relevant Coursework:</b> Data Structures & Algorithms, Linear Algebra, Discrete Mathematics, Web Development</p>
+                        <!-- <p><b>Relevant Coursework:</b> Data Structures & Algorithms, Linear Algebra, Discrete Mathematics, Web Development</p> -->
                     </div>
                     <div class="education-card">
                         <h3>School</h3>
@@ -152,188 +152,201 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="section">
+    <section id="projects" class="section reveal">
         <div class="section-tab projects-tab">
             <img src="assets/projects1.svg" alt="Projects" width="24" height="24">
             <h2>PROJECTS</h2>
         </div>
         <div class="section-content projects-bg">
-            <div class="content-container">
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <h3>Docs++</h3>
-                        <p>A distributed collaborative document editing system built from scratch. Features 10+ concurrent users with sentence-level locking over TCP sockets, thread pools, LRU caching (sub-1ms metadata lookup), and fault tolerance with file replication across multiple storage servers.</p>
-                        <div class="project-tags">
-                            <span class="project-tag">C</span>
-                            <span class="project-tag">TCP Sockets</span>
-                            <span class="project-tag">Distributed Systems</span>
-                        </div>
-                        <a href="https://github.com/devpatel301/Docs-Plus-Plus" class="project-link">
-                            <span>View on GitHub</span>
-                        </a>
-                    </div>
+            <div class="projects-scroll-container">
+                    <div class="projects-row">
 
-                    <div class="project-card">
-                        <h3>xv6 Demand Paging</h3>
-                        <p>Implementation of demand paging, FIFO page replacement, and swapping in the xv6 OS. Features lazy memory allocation, on-demand page loading from ELF binaries, per-process swap files, and a memstat() system call for debugging.</p>
-                        <div class="project-tags">
-                            <span class="project-tag">C</span>
-                            <span class="project-tag">xv6</span>
-                            <span class="project-tag">RISC-V</span>
+                        <div class="project-card">
+                            <h3>S-Learn</h3>
+                            <p>Led a 5-member team to gather requirements with Shankar Foundation to define 3 core user flows for a digital learning platform. Redesigned 70+ pages of static educational content into interactive, gamified web modules helping 100+ students. Deployed production-ready releases on Vercel and SPCRC servers (IIIT Hyderabad) with role-based access for teachers, parents, and admins.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">JavaScript</span>
+                                <span class="project-tag">Vercel</span>
+                                <span class="project-tag">Role-based Access</span>
+                            </div>
+                            <a href="https://github.com/aryamirani/dass_shankar/" target="_blank" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" class="project-link">
+                                <span>View on GitHub</span>
+                            </a>
                         </div>
-                        <a href="https://github.com/devpatel301/xv6-Demand-Paging" class="project-link">
-                            <span>View on GitHub</span>
-                        </a>
-                    </div>
 
-                    <div class="project-card">
-                        <h3>xv6 Scheduler</h3>
-                        <p>Custom CPU scheduling implementations for xv6 including First Come First Serve (FCFS) and Completely Fair Scheduler (CFS) with virtual runtime tracking. Also features a getreadcount() system call for tracking bytes read.</p>
-                        <div class="project-tags">
-                            <span class="project-tag">C</span>
-                            <span class="project-tag">xv6</span>
-                            <span class="project-tag">RISC-V</span>
+                        <div class="project-card">
+                            <h3>Splitco</h3>
+                            <p>Built a 3-tier group expense splitting application using React, Node.js, and MongoDB. Reduced settlement complexity to at most n-1 edges using graph-based debt netting across n transactions. Designed a responsive UI with real-time updates across 4 modules: groups, expenses, balances, and settlements.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">React</span>
+                                <span class="project-tag">Node.js</span>
+                                <span class="project-tag">MongoDB</span>
+                            </div>
+                            <a href="https://github.com/shaurya-kochar/splitco/" target="_blank" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" class="project-link">
+                                <span>View on GitHub</span>
+                            </a>
                         </div>
-                        <a href="https://github.com/devpatel301/xv6-Scheduler" class="project-link">
-                            <span>View on GitHub</span>
-                        </a>
-                    </div>
 
-                    <div class="project-card">
-                        <h3>UniGate (Campus Security Management)</h3>
-                        <p>QR-based campus gate system with 3-role workflows (students, guards, admins) and leave tracking via IIIT CAS SSO. Integrated Supabase Realtime DB for live approvals and WhatsApp Web.js for automated delivery and overstay notifications.</p>
-                        <div class="project-tags">
-                            <span class="project-tag">Supabase</span>
-                            <span class="project-tag">WhatsApp Web.js</span>
-                            <span class="project-tag">SSO</span>
+                        <div class="project-card">
+                            <h3>UniGate</h3>
+                            <p>QR-based campus gate system with 3-role workflows (students, guards, admins) and leave tracking via IIIT CAS SSO. Integrated Supabase Realtime DB for live approvals and WhatsApp Web.js for automated delivery and overstay notifications.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Supabase</span>
+                                <span class="project-tag">WhatsApp Web.js</span>
+                                <span class="project-tag">SSO</span>
+                            </div>
+                            <a href="https://github.com/aryamirani/UniGate" target="_blank" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" class="project-link">
+                                <span>View on GitHub</span>
+                            </a>
                         </div>
-                    </div>
 
-                    <div class="project-card">
-                        <h3>Splitco (Expense Manager)</h3>
-                        <p>Built a 3-tier group expense splitting application using React, Node.js, and MongoDB. Reduced settlement complexity to at most n-1 edges using graph-based debt netting across n transactions. Designed a responsive UI with real-time updates across 4 modules: groups, expenses, balances, and settlements.</p>
-                        <div class="project-tags">
-                            <span class="project-tag">React</span>
-                            <span class="project-tag">Node.js</span>
-                            <span class="project-tag">MongoDB</span>
+                        <div class="project-card">
+                            <h3>Docs++</h3>
+                            <p>A distributed collaborative document editing system built from scratch. Features 10+ concurrent users with sentence-level locking over TCP sockets, thread pools, LRU caching (sub-1ms metadata lookup), and fault tolerance with file replication across multiple storage servers.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">C</span>
+                                <span class="project-tag">TCP Sockets</span>
+                                <span class="project-tag">Distributed Systems</span>
+                            </div>
+                            <a href="https://github.com/devpatel301/Docs-Plus-Plus" target="_blank" rel="noopener noreferrer" class="project-link">
+                                <span>View on GitHub</span>
+                            </a>
                         </div>
-                    </div>
 
-                    <div class="project-card">
-                        <h3>S-Learn (Learning Management System)</h3>
-                        <p>Led a 5-member team to gather requirements with Shankar Foundation to define 3 core user flows for a digital learning platform. Redesigned 70+ pages of static educational content into interactive, gamified web modules helping 100+ students. Deployed production-ready releases on Vercel and SPCRC servers (IIIT Hyderabad) with role-based access for teachers, parents, and admins.</p>
-                        <div class="project-tags">
-                            <span class="project-tag">JavaScript</span>
-                            <span class="project-tag">Vercel</span>
-                            <span class="project-tag">Role-based Access</span>
+                        <div class="project-card">
+                            <h3>xv6 Demand Paging</h3>
+                            <p>Implementation of demand paging, FIFO page replacement, and swapping in the xv6 OS. Features lazy memory allocation, on-demand page loading from ELF binaries, per-process swap files, and a memstat() system call for debugging.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">C</span>
+                                <span class="project-tag">xv6</span>
+                                <span class="project-tag">RISC-V</span>
+                            </div>
+                            <a href="https://github.com/devpatel301/xv6-Demand-Paging" target="_blank" rel="noopener noreferrer" class="project-link">
+                                <span>View on GitHub</span>
+                            </a>
                         </div>
-                    </div>
 
-                    <div class="project-card">
-                        <h3>Smart Glove</h3>
-                        <p>Designed an IoT-based smart glove using IMU, Flex sensor, and ESP32 to support 5+ gesture-driven commands. Evaluated gesture-to-command mappings through iterative testing achieving 100% accuracy, providing accessibility for Smart Home/Device control. Includes a website simulation deployed on Firebase.</p>
-                        <div class="project-tags">
-                            <span class="project-tag">ESP32</span>
-                            <span class="project-tag">IoT</span>
-                            <span class="project-tag">Firebase</span>
+                        <div class="project-card">
+                            <h3>xv6 Scheduler</h3>
+                            <p>Custom CPU scheduling implementations for xv6 including First Come First Serve (FCFS) and Completely Fair Scheduler (CFS) with virtual runtime tracking. Also features a getreadcount() system call for tracking bytes read.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">C</span>
+                                <span class="project-tag">xv6</span>
+                                <span class="project-tag">RISC-V</span>
+                            </div>
+                            <a href="https://github.com/devpatel301/xv6-Scheduler" target="_blank" rel="noopener noreferrer" class="project-link">
+                                <span>View on GitHub</span>
+                            </a>
                         </div>
-                        <a href="https://smart-glove.web.app/" class="project-link">
-                            <span>View the site</span>
-                        </a>
-                    </div>
 
-                    <div class="project-card">
-                        <h3>C-Shell</h3>
-                        <p>A custom Unix shell implementation featuring command parsing with Abstract Syntax Trees (AST), I/O redirection, piping, background process management, job control, and signal handling. Built using only POSIX C library functions.</p>
-                        <div class="project-tags">
-                            <span class="project-tag">C</span>
-                            <span class="project-tag">POSIX</span>
-                            <span class="project-tag">Operating Systems</span>
+                        <div class="project-card">
+                            <h3>C-Shell</h3>
+                            <p>A custom Unix shell implementation featuring command parsing with Abstract Syntax Trees (AST), I/O redirection, piping, background process management, job control, and signal handling. Built using only POSIX C library functions.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">C</span>
+                                <span class="project-tag">POSIX</span>
+                                <span class="project-tag">Operating Systems</span>
+                            </div>
+                            <a href="https://github.com/devpatel301/C-Shell" target="_blank" rel="noopener noreferrer" class="project-link">
+                                <span>View on GitHub</span>
+                            </a>
                         </div>
-                        <a href="https://github.com/devpatel301/C-Shell" class="project-link">
-                            <span>View on GitHub</span>
-                        </a>
-                    </div>
 
-                    <div class="project-card">
-                        <h3>Agri-Bhasha Toolkit</h3>
-                        <p>A multi-lingual web platform for farmers powered by Bhashini API. Collaborated with a 5-person team to engineer a multilingual agricultural assistant with OCR-based extraction for 22 Indian languages. Shipped a 3-service deployment stack (frontend, backend, database) across Vercel and Render.</p>
-                        <div class="project-tags">
-                            <span class="project-tag">JavaScript</span>
-                            <span class="project-tag">Bhashini API</span>
-                            <span class="project-tag">OCR</span>
+                        <div class="project-card">
+                            <h3>TCP-over-UDP</h3>
+                            <p>A reliable data transfer protocol implementation over UDP featuring TCP-like semantics including 3-way handshake, 4-way termination, sliding window flow control, and timeout-based retransmission. Supports file transfer and chat modes.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">C</span>
+                                <span class="project-tag">UDP Sockets</span>
+                                <span class="project-tag">Networking</span>
+                            </div>
+                            <a href="https://github.com/devpatel301/TCP-using-UDP" target="_blank" rel="noopener noreferrer" class="project-link">
+                                <span>View on GitHub</span>
+                            </a>
                         </div>
-                        <a href="https://agri-bhasha-test-frontend.vercel.app/" class="project-link">
-                            <span>View Live Demo</span>
-                        </a>
-                    </div>
 
-                    <div class="project-card">
-                        <h3>C-Shark</h3>
-                        <p>A terminal-based network packet sniffer using libpcap. Captures, analyzes, and displays network traffic with colorful layer-by-layer dissection. Supports Ethernet, IPv4/IPv6, ARP, TCP, UDP, HTTP, HTTPS, and DNS protocols.</p>
-                        <div class="project-tags">
-                            <span class="project-tag">C</span>
-                            <span class="project-tag">libpcap</span>
-                            <span class="project-tag">Networking</span>
+                        <div class="project-card">
+                            <h3>Agri-Bhasha Toolkit</h3>
+                            <p>A multi-lingual web platform for farmers powered by Bhashini API. Collaborated with a 5-person team to engineer a multilingual agricultural assistant with OCR-based extraction for 22 Indian languages. Shipped a 3-service deployment stack (frontend, backend, database) across Vercel and Render.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">JavaScript</span>
+                                <span class="project-tag">Bhashini API</span>
+                                <span class="project-tag">OCR</span>
+                            </div>
+                            <a href="https://github.com/devpatel301/agri-bhasha-test-frontend" target="_blank" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" class="project-link">
+                                <span>View on GitHub</span>
+                            </a>
                         </div>
-                        <a href="https://github.com/devpatel301/C-Shark" class="project-link">
-                            <span>View on GitHub</span>
-                        </a>
-                    </div>
 
-                    <div class="project-card">
-                        <h3>TCP-over-UDP</h3>
-                        <p>A reliable data transfer protocol implementation over UDP featuring TCP-like semantics including 3-way handshake, 4-way termination, sliding window flow control, and timeout-based retransmission. Supports file transfer and chat modes.</p>
-                        <div class="project-tags">
-                            <span class="project-tag">C</span>
-                            <span class="project-tag">UDP Sockets</span>
-                            <span class="project-tag">Networking</span>
+                        <div class="project-card">
+                            <h3>Bakery Concurrency</h3>
+                            <p>A multi-threaded bakery simulation demonstrating classic concurrency problems using POSIX threads. Implements producer-consumer pattern with bounded buffers, mutual exclusion, semaphores, and priority scheduling.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">C</span>
+                                <span class="project-tag">POSIX Threads</span>
+                                <span class="project-tag">Concurrency</span>
+                            </div>
+                            <a href="https://github.com/devpatel301/Bakery-Concurrency" target="_blank" rel="noopener noreferrer" class="project-link">
+                                <span>View on GitHub</span>
+                            </a>
                         </div>
-                        <a href="https://github.com/devpatel301/TCP-using-UDP" class="project-link">
-                            <span>View on GitHub</span>
-                        </a>
-                    </div>
 
-                    <div class="project-card">
-                        <h3>Bakery Concurrency</h3>
-                        <p>A multi-threaded bakery simulation demonstrating classic concurrency problems using POSIX threads. Implements producer-consumer pattern with bounded buffers, mutual exclusion, semaphores, and priority scheduling.</p>
-                        <div class="project-tags">
-                            <span class="project-tag">C</span>
-                            <span class="project-tag">POSIX Threads</span>
-                            <span class="project-tag">Concurrency</span>
+                        <div class="project-card">
+                            <h3>C-Shark</h3>
+                            <p>A terminal-based network packet sniffer using libpcap. Captures, analyzes, and displays network traffic with colorful layer-by-layer dissection. Supports Ethernet, IPv4/IPv6, ARP, TCP, UDP, HTTP, HTTPS, and DNS protocols.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">C</span>
+                                <span class="project-tag">libpcap</span>
+                                <span class="project-tag">Networking</span>
+                            </div>
+                            <a href="https://github.com/devpatel301/C-Shark" target="_blank" rel="noopener noreferrer" class="project-link">
+                                <span>View on GitHub</span>
+                            </a>
                         </div>
-                        <a href="https://github.com/devpatel301/Bakery-Concurrency" class="project-link">
-                            <span>View on GitHub</span>
-                        </a>
-                    </div>
 
-                    <div class="project-card">
-                        <h3>Obstacle Avoidance Robot</h3>
-                        <p>ESP32-based autonomous robot with dual-mode control (manual/auto). Features MPU6050 gyroscope, ultrasonic sensors for obstacle detection, and a real-time Firebase web dashboard for monitoring and control.</p>
-                        <div class="project-tags">
-                            <span class="project-tag">ESP32</span>
-                            <span class="project-tag">Arduino</span>
-                            <span class="project-tag">Firebase</span>
+                        <div class="project-card">
+                            <h3>Smart Glove</h3>
+                            <p>Designed an IoT-based smart glove using IMU, Flex sensor, and ESP32 to support 5+ gesture-driven commands. Evaluated gesture-to-command mappings through iterative testing achieving 100% accuracy, providing accessibility for Smart Home/Device control. Includes a website simulation deployed on Firebase.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">ESP32</span>
+                                <span class="project-tag">IoT</span>
+                                <span class="project-tag">Firebase</span>
+                            </div>
+                            <a href="https://smart-glove.web.app/" target="_blank" rel="noopener noreferrer" class="project-link">
+                                <span>View the site</span>
+                            </a>
                         </div>
-                        <a href="https://obstacle-avoidance-robot.web.app/" class="project-link">
-                            <span>View site</span>
-                        </a>
+
+                        <div class="project-card">
+                            <h3>Obstacle Avoidance Robot</h3>
+                            <p>ESP32-based autonomous robot with dual-mode control (manual/auto). Features MPU6050 gyroscope, ultrasonic sensors for obstacle detection, and a real-time Firebase web dashboard for monitoring and control.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">ESP32</span>
+                                <span class="project-tag">Arduino</span>
+                                <span class="project-tag">Firebase</span>
+                            </div>
+                            <a href="https://obstacle-avoidance-robot.web.app/" target="_blank" rel="noopener noreferrer" class="project-link">
+                                <span>View site</span>
+                            </a>
+                        </div>
+
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+
     <!-- Skills Section -->
-    <section id="skills" class="section">
+    <section id="skills" class="section reveal">
         <div class="section-tab skills-tab">
             <img src="assets/skills.svg" alt="Skills" width="24" height="24">
             <h2>SKILLS</h2>
         </div>
         <div class="section-content skills-bg">
             <div class="content-container">
-                <h3 style="margin-bottom: 20px; font-size: 18px; font-weight: 500;"><b>Languages</b></h3>
-                <div class="skills-scroll-container">
+                <h3 class="skills-category-title">Languages</h3>
+            <div class="skills-scroll-container">
                     <div class="skills-row">
                         <div class="skill-card">
                             <!-- <div class="skill-icon">
@@ -402,10 +415,9 @@
                             <p>Kotlin</p>
                         </div>
                     </div>
-                </div>
-
-                <h3 style="margin-top: 30px; margin-bottom: 20px; font-size: 18px; font-weight: 500;">Frameworks</h3>
-                <div class="skills-scroll-container">
+            </div>
+                <h3 class="skills-category-title">Frameworks</h3>
+            <div class="skills-scroll-container">
                     <div class="skills-row">
                         <div class="skill-card">
                             <!-- <div class="skill-icon">
@@ -452,7 +464,7 @@
                     </div>
                 </div>
 
-                <h3 style="margin-top: 30px; margin-bottom: 20px; font-size: 18px; font-weight: 500;">Tools & Platforms</h3>
+                <h3 class="skills-category-title">Tools & Platforms</h3>
                 <div class="skills-scroll-container">
                     <div class="skills-row">
                         <div class="skill-card">
@@ -516,10 +528,9 @@
                             <p>PostgreSQL</p>
                         </div>
                     </div>
-                </div>
-
-                <h3 style="margin-top: 30px; margin-bottom: 20px; font-size: 18px; font-weight: 500;">Libraries</h3>
-                <div class="skills-scroll-container">
+            </div>
+                <h3 class="skills-category-title">Libraries</h3>
+            <div class="skills-scroll-container">
                     <div class="skills-row">
                         <div class="skill-card">
                             <!-- <div class="skill-icon">
@@ -552,7 +563,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="section">
+    <section id="contact" class="section reveal">
         <div class="section-tab contact-tab">
             <img src="assets/mail1.svg" alt="Contact" width="24" height="24">
             <h2>CONTACT</h2>
@@ -567,13 +578,13 @@
                             <img src="assets/mail1.svg" alt="Email" width="24" height="24">
                             devpatel0262@gmail.com
                         </a>
-                        <a href="https://github.com/devpatel301" target="_blank" class="contact-link">
+                        <!-- <a href="https://github.com/devpatel301" target="_blank" rel="noopener noreferrer" class="contact-link">
                             <img src="assets/github_logo.svg" alt="GitHub" width="24" height="24">
-                            github.com/devpatel301
-                        </a>
-                        <a href="https://www.linkedin.com/in/devpatel301" target="_blank" class="contact-link">
+                            GitHub: devpatel301
+                        </a> -->
+                        <a href="https://www.linkedin.com/in/devpatel301" target="_blank" rel="noopener noreferrer" class="contact-link">
                             <img src="assets/linkedin_logo.svg" alt="LinkedIn" width="24" height="24">
-                            linkedin.com/in/devpatel301
+                            LinkedIn: devpatel301
                         </a>
                     </div>
                 </div>
@@ -618,9 +629,9 @@
                 <div class="footer-social-container">
                     <div class="footer-social-row">
                         <a href="mailto:devpatel0262@gmail.com" class="footer-link"><img src="assets/mail1.svg" alt="Mail" width="24" height="24"></a>
-                        <a href="https://github.com/devpatel301" target="_blank" class="footer-link"><img src="assets/github_logo.svg" alt="GitHub" width="24" height="24"></a>
-                        <a href="https://www.linkedin.com/in/devpatel301" target="_blank" class="footer-link"><img src="assets/linkedin_logo.svg" alt="LinkedIn" width="24" height="24"></a>
-                        <a href="assets/cv.pdf" download class="footer-link"><img src="assets/download_button.svg" alt="Download" width="24" height="24">Resume</a>
+                        <a href="https://github.com/devpatel301" target="_blank" rel="noopener noreferrer" class="footer-link"><img src="assets/github_logo.svg" alt="GitHub" width="24" height="24"></a>
+                        <a href="https://www.linkedin.com/in/devpatel301" target="_blank" rel="noopener noreferrer" class="footer-link"><img src="assets/linkedin_logo.svg" alt="LinkedIn" width="24" height="24"></a>
+                        <a href="assets/resume/cv.pdf" download class="footer-link"><img src="assets/download_button.svg" alt="Download" width="24" height="24">Resume</a>
                     </div>
                 </div>
             </div>
