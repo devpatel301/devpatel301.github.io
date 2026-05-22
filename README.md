@@ -26,4 +26,4 @@ Feel free to explore the site and reach out if you'd like to connect!
 
 ---
 
-*Thanks for stopping by!*
+_Thanks for stopping by!_
