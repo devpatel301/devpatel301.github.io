@@ -1,0 +1,212 @@
+%-------------------------
+% Resume in LaTeX
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+\usepackage[normalem]{ulem}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-3pt}\scshape\large\normalfont\uppercase
+}{}{0em}{}[\titlerule \vspace{-4pt}]
+
+
+
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+% Custom commands for compact bullet points
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in, topsep=2pt, partopsep=0pt, parsep=0pt, itemsep=2pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \scshape Nidhish Jain} \\ \vspace{1pt}
+    International Institute of Information Technology, Hyderabad \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ +91 8103052776 ~ \href{mailto:nidhish.jain@students.iiit.ac.in}{\raisebox{-0.2\height}\faEnvelope\  \underline{nidhish.jain@students.iiit.ac.in}} ~ 
+    \href{https://www.linkedin.com/in/nidhish-jain-43ab52280/}{\raisebox{-0.2\height}\faLinkedin\ \underline{Nidhish Jain}}  ~
+    \href{https://github.com/Nidhishj}{\raisebox{-0.2\height}\faGithub\ \underline{Nidhishj}}
+\end{center}
+
+\section*{Education}
+\textbf{International Institute of Information Technology, Hyderabad} \hfill \textit{2023 -- Present} \\
+\small{\textit{B.Tech in Computer Science and Engineering} \hfill CGPA: 8.78}
+
+\section*{Experience}
+\textbf{Undergraduate Researcher} \hfill \textit{May 2025 -- Present} \\
+\small{\textit{CVIT, IIITH} \hfill Hyderabad, India} \\
+\resumeItemListStart
+\resumeItem{Collaborating with Prof. Jayanthi Sivaswamy on medical imaging and segmentation research.}
+\resumeItem{Developing a multi-modal image segmentation model using deep learning to improve anatomical structure delineation.}
+\resumeItemListEnd
+\vspace{8pt}
+\textbf{Software Development Intern $|$\href{https://github.com/Nidhishj/Asset_Management_System}{ GitHub}} \hfill \textit{Jan 2025 -- May 2025} \\
+\small{\textit{Eklavya Foundation} \hfill Remote / Hyderabad, India} \\
+\resumeItemListStart
+\resumeItem{Developed a Smart Asset Management System using MERN stack to manage organizational assets, projects and users.}
+\resumeItem{Enhanced the system with real-time form validation, database export facility and automated asset report generation.}
+\resumeItemListEnd
+
+\section{Projects}
+\textbf{Distributed Network File System (NFS)} $|$ \href{https://github.com/Nidhishj/NFS}{GitHub} - \small{\textit{C, Threads, TCP Networking}} \\
+\resumeItemListStart
+\resumeItem{Designed scalable distributed NFS architecture with dedicated naming server, storage servers, and clients over TCP.}
+\resumeItem{Implemented concurrent file operations with multi-threading, synchronization primitives, and fault-tolerant data replication.}
+\vspace{-11pt}
+\resumeItem{Enhanced path resolution performance by leveraging trie and hash map; added support for audio file streaming.}
+\resumeItemListEnd
+\vspace{8pt}
+
+\textbf{Crowd Detection App} $|$ \href{https://github.com/Nidhishj/ESW-PROJECT}{GitHub} - \small{\textit{Kotlin, OpenCV, TFLite, Android, QIDK}} \\
+\resumeItemListStart
+\resumeItem{Created an Android app for real-time crowd and emotion detection leveraging QIDK kits computing power.}
+\vspace{2pt}
+
+\resumeItem{Incorporated multiple crowd detection models to optimize battery usage on QIDK kits.}
+\vspace{2pt}
+
+\resumeItem{Trained an emotion detection model and merged it with the crowd detection model for real-time analysis.}
+\resumeItemListEnd
+\vspace{8pt}
+
+% \textbf{Buy-Sell-IIITH} $|$ \href{https://github.com/Nidhishj/Buy-Sell-IIITH/tree/main}{GitHub} - \small{\textit{MongoDB, Express, React, Node.js}} \\
+% \resumeItemListStart
+% \resumeItem{Developed campus marketplace platform with item listing, browsing and JWT authentication.}
+% \resumeItem{Enhanced user experience by integrating an AI chatbot for real-time assistance and engagement.}
+% \resumeItemListEnd
+% \vspace{8pt}
+
+\textbf{LoRAQ} $|$ \href{https://github.com/Nidhishj/LoRAQ}{GitHub} - \small{\textit{Python, Reinforcement Learning, NumPy}} \\
+\resumeItemListStart
+\resumeItem{Built an RL-based framework for low-rank matrix approximation, reducing computation time while maintaining accuracy.}
+\vspace{-10pt}
+\resumeItem{Applied DQN, A2C, and hybrid methods to accelerate approximation by up to 50\% on GPUs.}
+\vspace{2pt}
+\resumeItem{Incorporated adaptive strategies and early stopping to reduce training time by over 30\% with minimal error increase.}
+\resumeItemListEnd
+\vspace{8pt}
+
+\textbf{CShell} $|$ \href{https://github.com/Nidhishj/C-shell}{GitHub} - \small{\textit{C, Unix, Shell Design}} \\
+\resumeItemListStart
+\resumeItem{Built a modular Unix-like shell in C with job control, signals, I/O redirection, pipelines and robust process management.}
+\vspace{2pt}
+\resumeItem{Implemented 10+ commands along with history, aliases, error handling and foreground/background process control.}
+\resumeItemListEnd
+
+% \section{Achievements \& Extracurriculars}
+% \resumeItemListStart
+% \resumeItem{\textbf{Merit List Award:} Recipient for three semesters at IIIT-H.}\hfill\textit{2023-2025}
+% % \vspace{2.33pt}
+% \resumeItem{\textbf{ICPC India Prelims:} Secured team rank of 129 out of 2930 teams which participated.} \hfill\href{https://indiaicpc.in/ranklist.html}{\textit{2025-ranklist}}
+% % \vspace{2.33pt}
+% \resumeItem{\textbf{Codeforces:} Rated Specialist with Max Rating of 1517.} \hfill\href{https://codeforces.com/profile/nidhissssssssssssh}{\textit{nidhissssssssssssh}}
+% % \vspace{2.33pt}
+
+% \resumeItem{\textbf{JEE Mains:} Secured All India Rank 1256 (99.899 percentile) among 1.2 million candidates.}\hfill\textit{2023}
+% % \vspace{2.33pt}
+
+% \resumeItem{\textbf{JEE Advanced:} Achieved All India Rank 2698 among 150,000 candidates.}\hfill{\textit{2023}}
+% % \vspace{2.33pt}
+
+% \resumeItem{\textbf{KVPY-SA:} Secured All India Rank 1250, Merit List Holder.}\hfill{\textit{2022}}
+% % \vspace{2.33pt}
+
+% \resumeItem{\textbf{NTSE Scholar:} Qualified both stages (State and National) of the National Talent Search Examination.}\hfill{\textit{2021}}
+% % \vspace{2.33pt}
+% \resumeItem{\textbf{Teaching Assistant, Computer Programming:} Problem and contest design, tutorials, and evaluation for 150 students.}
+% % \vspace{2.33pt}
+% \resumeItem{\textbf{Marketing Head, Gaming Club, IIIT-H:} Leading 10-member team, managing social media \& organizing events.}
+% \resumeItemListEnd
+\section{Achievements \& Extracurriculars}
+\resumeItemListStart
+
+\resumeItem{\textbf{Merit List Award:} Recipient for three semesters at IIIT-H. \hfill \textit{2023--2025}}
+
+\resumeItem{\textbf{ICPC India Prelims:} Secured team rank of 129 out of 2930 teams which participated.
+\hfill \href{https://indiaicpc.in/ranklist.html}{\textit{2025 Ranklist}}}
+
+\resumeItem{\textbf{Codeforces:} Rated Specialist with Max Rating of 1556.
+\hfill \href{https://codeforces.com/profile/nidhissssssssssssh}{\textit{nidhissssssssssssh}}}
+ 
+\resumeItem{\textbf{JEE Mains:} Secured All India Rank 1256 (99.899 percentile) among 1.2 million candidates.
+\hfill \textit{2023}}
+
+\resumeItem{\textbf{JEE Advanced:} Achieved All India Rank 2698 among 150,000 candidates.
+\hfill \textit{2023}}
+
+\resumeItem{\textbf{KVPY-SA:} Secured All India Rank 1250, Merit List Holder.
+\hfill \textit{2022}}
+
+\resumeItem{\textbf{NTSE Scholar:} Qualified both stages (State and National) of the National Talent Search Examination.
+\hfill \textit{2021}}
+
+% \resumeItem{\textbf{Teaching Assistant, Computer Programming:} Problem and contest design, tutorials, and evaluation for 150 students.}\resumeItem{\textbf{Marketing Head, Gaming Club, IIIT-H:} Leading a 10-member team, managing social media \& organizing events.}
+
+\resumeItemListEnd
+
+\section{Technical Skills}
+\small{
+\textbf{Languages:} Python, C, C++, JavaScript, HTML/CSS, SQL\\
+    \textbf{Technologies/Frameworks:} Linux, Git, React, Express, MongoDB, Node.js, Flask, NumPy, Pandas, OpenCV, PyTorch\\
+}
+\vspace{-5pt}
+\section{Relevant Coursework}
+\small{
+\textbf{Computer Science:} Data Structures \& Algorithms, Operating Systems \& Networks, Algorithm Analysis \& Design, Computer System Organization, Automata Theory, Databases and Applications,Machine Learning, Statistical Methods in AI \\
+\textbf{Development:} Introduction to Software Systems, Internet of Things, Design \& Analysis of Software Systems \\
+\textbf{Mathematics:} Linear Algebra, Real Analysis, Probability and Statistics, Discrete Structures, Numerical Algorithms
+}
+
+\end{document}

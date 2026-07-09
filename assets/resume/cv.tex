@@ -57,7 +57,7 @@
 %-------------------------
 % Custom commands
 \newcommand{\resumeItem}[1]{
-  \item \small #1\vspace{-3pt}
+  \item \small #1\vspace{-2pt}
 }
 
 \newcommand{\resumeSubheading}[4]{
@@ -79,7 +79,7 @@
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \small#1 & #2 \\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}\vspace{-3pt}
 }
 
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
@@ -87,10 +87,12 @@
 
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.35in, label=\textbullet, itemsep=2pt, topsep=0pt, parsep=0pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-3pt}}
+\newcommand{\resumeItemListStartNoIndent}{\begin{itemize}[leftmargin=0.15in, label=\textbullet, itemsep=2pt, topsep=0pt, parsep=0pt]}
+\newcommand{\resumeItemListEndNoIndent}{\end{itemize}\vspace{-3pt}}
 
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -100,8 +102,8 @@
 
 \begin{center}
   \textbf{\Huge \scshape Dev Patel} \\ \vspace{1pt}
-  \small (+91) 8000722744 $|$ \href{mailto:devpatel0262@gmail.com}{\underline{devpatel0262@gmail.com}\extlinkicon} \\
-  \small \mbox{\href{https://linkedin.com/in/devpatel301}{\underline{linkedin.com/in/devpatel301}\extlinkicon} $|$ \href{https://github.com/devpatel301}{\underline{github.com/devpatel301}\extlinkicon} $|$ \href{https://devpatel301.github.io}{\underline{devpatel301.github.io}\extlinkicon}}
+  \small (+91) 8000722744 $|$ \href{mailto:devpatel0262@gmail.com}{\underline{devpatel0262@gmail.com}\extlinkicon} $|$ \\
+  \mbox{\href{https://linkedin.com/in/devpatel301}{\underline{linkedin.com/in/devpatel301}\extlinkicon} $|$ \href{https://github.com/devpatel301}{\underline{github.com/devpatel301}\extlinkicon} $|$ \href{https://devpatel301.github.io}{\underline{devpatel301.github.io}\extlinkicon}}
 \end{center}
 
 
@@ -110,7 +112,7 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {International Institute of Information Technology, Hyderabad}{Hyderabad, India}
-      % {B.Tech in Computer Science (CGPA: 7.89.88)}{July 2024 -- Present}
+      % {B.Tech in Computer Science (CGPA: 7.89)}{July 2024 -- Present}
       {B.Tech in Computer Science}{July 2024 -- Present}
     % \resumeSubheading
     %   {Riverdale Academy, Surat}{Surat, Gujarat}
@@ -120,18 +122,29 @@
     %   {Class X - 94.67\%}{June 2020}
   \resumeSubHeadingListEnd
 
+\section{Relevant Coursework}
+\small{
+\textbf{Computer Science:} Data Structures \& Algorithms, Operating Systems \& Networks, Algorithm Analysis \& Design, Computer System Organization, Automata Theory, Databases and Applications, ML Security \\
+\textbf{Development:} Introduction to Software Systems, Internet of Things, Design \& Analysis of Software Systems \\
+\textbf{Mathematics:} Linear Algebra, Real Analysis, Probability and Statistics, Discrete Structures
+}
+
 %-----------EXPERIENCE-----------
 \section{Experience}
 \resumeSubHeadingListStart
 
   \resumeSubheading
-    {S-Learn (Learning Management System) $|$ \href{https://github.com/aryamirani/dass_shankar/}{\extlinkicon}}{January 2026 -- April 2026}
+    {S-Learn (Learning Management System) \textnormal{$|$ \href{https://github.com/aryamirani/dass_shankar/}{\extlinkicon}}}{January 2026 -- April 2026}
     {Shankar Foundation}{Hyderabad, India}
+    \vspace{2pt}
     \resumeItemListStart
-      \resumeItem{Led a 5-member team to gather requirements with Shankar Foundation to define 3 core user flows for a digital learning platform.}
-      \resumeItem{Redesigned 70+ pages of static educational content into interactive, gamified web modules helping 100+ students.}
+        \resumeItem{Architected multi-tier deployment stack with role-based access control for 3 user roles: teachers, parents and admins.}
+        \resumeItem{Engineered server-side rendering and client-side state management for 70+ interactive educational modules serving 100+ concurrent users.}
+        \resumeItem{Configured production deployments on Vercel and SPCRC servers (IIIT Hyderabad) with database optimization, session management, and real-time content sync.}
+      % \resumeItem{Led a 5-member team to gather requirements with Shankar Foundation to define 3 core user flows for a digital learning platform.}
+      % \resumeItem{Redesigned 70+ pages of static educational content into interactive, gamified web modules helping 100+ students.}
       % \resumeItem{Implemented 15+ accessible interaction components tailored for differently-abled learners, improving accessibility for 100+ students.}
-      \resumeItem{Deployed production-ready releases on Vercel and SPCRC servers (IIIT Hyderabad) with role-based access for teachers, parents, and admins.}
+      % \resumeItem{Deployed production-ready releases on Vercel and SPCRC servers (IIIT Hyderabad) with role-based access for teachers, parents, and admins.}
     \resumeItemListEnd
   \resumeSubHeadingListEnd
    
@@ -141,29 +154,31 @@
       \resumeProjectHeading
           {\textbf{Splitco (Expense Manager)} $|$ \href{https://github.com/shaurya-kochar/splitco/}{\extlinkicon}}{December 2025 -- Present}
           \resumeItemListStart
-            \resumeItem{Built a 3-tier group expense splitting application using React, Node.js, and MongoDB.}
-            \resumeItem{Reduced settlement complexity to at most n-1 edges using graph-based debt netting across n transactions.}
-            \resumeItem{Designed a responsive UI with real-time updates across 4 modules: groups, expenses, balances, and settlements.}
+          \resumeItem{Built a 3-tier group expense splitting application using React, Node.js, and MongoDB.}
+          \resumeItem{Reduced settlement complexity to at most n-1 transactions across n debts using graph-based debt netting.}
+          \resumeItem{Designed a responsive UI with real-time updates across 4 modules: groups, expenses, balances, and settlements.}
+            % \resumeItem{Engineered a 3-tier group expense-splitting app with graph-based debt netting that reduces settlement complexity to at most n-1 transactions across n debts, cutting redundant transfers by up to 60\%.}
+            % \resumeItem{Delivered a responsive, real-time UI across 4 modules (groups, expenses, balances, settlements) with live state updates on everytransaction event}
           \resumeItemListEnd
       \resumeProjectHeading
           {\textbf{Agri-Bhasha Toolkit} $|$ Megathon 2025 $|$ \href{https://github.com/devpatel301/agri-bhasha-test-frontend}{\extlinkicon}}{October 2025}
           \resumeItemListStart
-            % \resumeItem{Engineered a multilingual agricultural assistant using Bhashini API with OCR-based extraction for 22 Indian languages.}
+            % \resumeItem{Engineered a multilingual agricultural assistant for 22 Indian languages.}
             % \resumeItem{Shipped a 3-service deployment stack (frontend, backend, database) across Vercel and Render.}
             \resumeItem{Collaborated with a 5-person team to engineer a multilingual agricultural assistant using Bhashini API with OCR-based extraction for 22 Indian languages.}
-            \resumeItem{Shipped a 3-service deployment stack (frontend, backend, database) across Vercel and Render.}
+            \resumeItem{Shipped a 3-service deployment stack (frontend, backend, database) across Vercel and Render within a 24-hour hackathon window.}
           \resumeItemListEnd
       \resumeProjectHeading
           {\textbf{Docs++ (Distributed Document Editor)} $|$ \href{https://github.com/devpatel301/Docs-Plus-Plus}{\extlinkicon}}{October 2025 -- November 2025}
           \resumeItemListStart
-            \resumeItem{Built a collaborative document editor supporting 10+ concurrent users with sentence-level locking over TCP sockets.}
+            \resumeItem{Built a collaborative document editor in C++ supporting 10+ concurrent users with sentence-level locking over raw TCP sockets, achieving zero edit-conflict data loss under load testing.}
             \resumeItem{Reduced metadata lookup latency to sub-1ms using LRU caching and Trie-based indexing.}
           \resumeItemListEnd
       \resumeProjectHeading
           {\textbf{UniGate (Campus Security Management)} $|$ \href{https://github.com/aryamirani/UniGate}{\extlinkicon}}{January 2026}
           \resumeItemListStart
-            \resumeItem{Coordinated with campus authorities to develop a QR-based campus gate system with 3-role workflows (students, guards, admins) and leave tracking via IIIT CAS SSO.}
-            \resumeItem{Integrated Supabase Realtime DB for live approvals and WhatsApp Web.js for automated delivery and overstay notifications.}
+            \resumeItem{Coordinated with campus authorities to develop a QR-based campus gate system with 3-role workflows (students, guards, admins) and leave tracking via IIIT CAS SSO, replacing a manual paper log used by 2000+ residents.}
+            \resumeItem{Integrated Supabase Realtime DB for live approvals and WhatsApp Web.js for automated delivery and overstay alerts.}
           \resumeItemListEnd
           \resumeProjectHeading
           {\textbf{Smart Glove} $|$ \href{https://smart-glove.web.app/}{\extlinkicon}}{February 2025 -- April 2025}
@@ -171,8 +186,15 @@
             \resumeItem{Designed an IoT-based smart glove using IMU, Flex sensor, and ESP32 to support 5+ gesture-driven commands.}
             \resumeItem{Evaluated gesture-to-command mappings through iterative testing achieving 100\% accuracy, providing accessibility for Smart Home/Device control.}
           \resumeItemListEnd
+          %       \resumeProjectHeading
+          % {\textbf{IMS App} $|$ \emph{Kotlin, Jetpack Compose} $|$ \href{https://github.com/devpatel301/IMS-app}{\extlinkicon}}{April 2026}
+          % \resumeItemListStart
+          %   \resumeItem{Designed a role-based institute management Android application featuring dedicated dashboards for 2 distinct user roles (administrators and students).}
+          %   \resumeItem{Engineered an attendance module optimized for streamlined marking, advanced filtering, and data exporting, paired with a drag-and-drop timetable featuring real-time scheduling constraints.}
+          % \resumeItemListEnd
+
         % \resumeProjectHeading
-        %   {\textbf{C-Shell (Unix Shell)} $|$ \emph{Systems Project} $|$ \href{https://github.com/devpatel301/C-Shell}{\underline{Link}}}{}
+        %   {\textbf{C-Shell (Unix Shell)} $|$ \emph{Systems Project} $|$ \href{https://github.com/devpatel301/C-Shell}{\extlinkicon}}{September 2025}
         %   \resumeItemListStart
         %     \resumeItem{Developed a Unix-like shell with AST-based parsing, pipelines, and job control.}
         %     \resumeItem{Added 3 core controls: I/O redirection, background jobs, and signal handling for process management.}
@@ -183,11 +205,11 @@
 
 %-----------PROGRAMMING SKILLS-----------
 \section{Technical Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
+ \begin{itemize}[leftmargin=0in, label={}]
     \small{\item{
-     \textbf{Languages}{: C, C++, Python, HTML/CSS, JavaScript, TypeScript, SQL, Bash, x86-64 Assembly, Kotlin} \\
-     \textbf{Frameworks}{: React, Vite, Django, Flask, Node.js, Express.js} \\
-     \textbf{Tools \& Platforms}{: Docker, Git, GitHub, Wireshark, Postman, LaTeX, Figma, MongoDB, MySQL, PostgreSQL} \\
+     \textbf{Languages}{: C, C++, Python, HTML/CSS, JavaScript, TypeScript, SQL, Bash, x86-64 Assembly} \\
+     \textbf{Frameworks}{: React, Vite, Flask, Node.js, Express.js} \\
+     \textbf{Tools \& Platforms}{: Docker, Git, GitHub, Wireshark, Postman, LaTeX, Figma, MongoDB, MySQL} \\
      \textbf{Libraries}{: NumPy, Pandas, Matplotlib} \\
     %  \textbf{Domains}{: Full Stack Dev, AI/ML, Neural Networks, Deep Learning, Cybersecurity}
     }}
@@ -196,18 +218,13 @@
 
 %-----------ACHIEVEMENTS-----------
 \section{Achievements}
-  \resumeSubHeadingListStart
-    \resumeProjectHeading
-      {\small Top 20 Finalist, Megathon 2025 (Agri-Bhasha Toolkit) -- IIIT Hyderabad's largest hackathon with 1000+ participants.}{}
-    % \resumeProjectHeading
-    %   {\small Solved 50\%+ problems at Atlassian Fasttrack Hackathon.}{}
-    \resumeProjectHeading
-      {\small Marketing and Social Media Head, The Gaming Club (largest club at IIIT Hyderabad).}{}
-      \resumeProjectHeading
-      {\small Coordinated cultural activities for interhouse competitions as a captain of Prithvi House, Cultural Council.}{}
-    \resumeProjectHeading
-      {\small JEE Mains 2024 - AIR 1139 (Top 0.1\%) $|$ JEE Advanced 2024 - AIR 4199 (Top 2\%).}{}
-  \resumeSubHeadingListEnd
+  \resumeItemListStartNoIndent
+    \resumeItem{\small Top 20 Finalist, Megathon 2025 (Agri-Bhasha Toolkit) -- IIIT Hyderabad's largest hackathon with 1000+ participants.}
+    % \resumeItem{\small Head of Marketing \& Social Media Team, The Gaming Club -- Handling social media of the largest club in IIIT H with over 1200+ followers.}
+    \resumeItem{\small Marketing and Social Media Head, The Gaming Club (largest club at IIIT Hyderabad).}
+    \resumeItem{\small Member of the Cultural Council -- Involved in planning and overseeing 20+ campus-wide events, coordinating with multiple clubs and teams to ensure smooth execution.}
+    \resumeItem{\small JEE Mains 2024 - AIR 1139 (Top 0.1\%) $|$ JEE Advanced 2024 - AIR 4199 (Top 2\%).}
+  \resumeItemListEndNoIndent
 
   %-----------LEADERSHIP ROLES-----------
 % \section{Leadership \& Activities}
