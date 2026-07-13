@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.12.5)  9 JUL 2026 22:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.12.5)  9 JUL 2026 22:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -295,8 +295,8 @@ File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count278
 \l__pdf_internal_box=\box55
 )
-(./resume.aux)
-\openout1 = `resume.aux'.
+(./apt_quant.aux)
+\openout1 = `apt_quant.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 99.
 LaTeX Font Info:    ... okay on input line 99.
@@ -332,9 +332,9 @@ LaTeX Font Info:    ... okay on input line 99.
 \everyMPtoPDFconversion=\toks26
 )
 Package hyperref Info: Link coloring OFF on input line 99.
- (./resume.out) (./resume.out)
+ (./apt_quant.out) (./apt_quant.out)
 \@outlinefile=\write3
-\openout3 = `resume.out'.
+\openout3 = `apt_quant.out'.
 
 
 
@@ -375,7 +375,7 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 [1
 
 {/home/dev/.texlive2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/home/dev
-/texmf/fonts/enc/dvips/fontawesome/fontawesomeone.enc}] (./resume.aux)
+/texmf/fonts/enc/dvips/fontawesome/fontawesomeone.enc}] (./apt_quant.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
@@ -384,12 +384,12 @@ L3 programming layer <2024-01-22>
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package rerunfilecheck Info: File `resume.out' has not changed.
+Package rerunfilecheck Info: File `apt_quant.out' has not changed.
 (rerunfilecheck)             Checksum: F7E01BD9F94A8010DEC95912469683AE;634.
  ) 
 Here is how much of TeX's memory you used:
- 12142 strings out of 476064
- 187458 string characters out of 5792853
+ 12143 strings out of 476064
+ 187515 string characters out of 5792853
  1956975 words of memory out of 5000000
  34015 multiletter control sequences out of 15000+600000
  565220 words of font info for 63 fonts, out of 8000000 for 9000
@@ -404,7 +404,7 @@ fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmti10.pfb>
-Output written on resume.pdf (1 page, 123523 bytes).
+Output written on apt_quant.pdf (1 page, 124240 bytes).
 PDF statistics:
  96 PDF objects out of 1000 (max. 8388607)
  75 compressed objects within 1 object stream

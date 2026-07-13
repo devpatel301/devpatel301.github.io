@@ -33,6 +33,9 @@
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
+% FOR BULLET POINT IN ACHIEVEMENT SECTION
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
 % Adjust margins
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
@@ -123,8 +126,8 @@
 
 \section{Relevant Coursework}
     \small{
-        \textbf{Computer Science:} Data Structures \& Algorithms, Operating Systems \& Networks, Algorithm Analysis \& Design, Computer Systems, Automata Theory, Databases and Applications, Machine Learning, ML Security \\
-        \textbf{Development:} Introduction to Software Systems, Internet of Things, Design \& Analysis of Software Systems \\
+        \textbf{Computer Science:} Data Structures \& Algorithms, Operating Systems \& Networks, Advanced Algorithms, Computer Systems, Automata Theory, Databases and Applications, Machine Learning, ML Security \\
+        \textbf{Development:} Design, Testing \& Analysis of Software Systems, Internet of Things \\
         \textbf{Mathematics:} Linear Algebra, Real Analysis, Probability and Statistics, Discrete Structures
     }
 
@@ -133,10 +136,10 @@
 \resumeSubHeadingListStart
 
   \resumeSubheading
-    {S-Learn (Learning Management System) $|$ \href{https://github.com/aryamirani/dass_shankar/}{\extlinkicon}}{January 2026 -- April 2026}
+    {S-Learn (Learning Management System) $|$ \href{https://github.com/aryamirani/dass_shankar/}{\extlinkicon}}{January 2026 - April 2026}
     {Shankar Foundation}{Hyderabad, India}
     \resumeItemListStart
-      \resumeItem{Led a 5-member team to gather requirements with Shankar Foundation to define \textbf{3 core user flows} for a digital learning platform.}
+      \resumeItem{Led a 5-member team to develop a digital learning platform defining \textbf{3 core user flows}.}
       \resumeItem{Redesigned 70+ pages of static educational content into interactive, gamified web modules helping \textbf{100+ students}.}
       % \resumeItem{Implemented 15+ accessible interaction components tailored for differently-abled learners, improving accessibility for 100+ students.}
       \resumeItem{Deployed production-ready releases on \textbf{Vercel} and \textbf{SPCRC servers (IIIT Hyderabad)} with \textbf{role-based access control} for teachers, parents, and admins.}
@@ -146,44 +149,71 @@
 %-----------PROJECTS-----------
 \section{Projects}
     \resumeSubHeadingListStart
-      \resumeProjectHeading
-          {\textbf{Splitco (Expense Manager)} $|$ \href{https://github.com/shaurya-kochar/splitco/}{\extlinkicon}}{December 2025 -- Present}
+    
+    \resumeProjectHeading
+      {\textbf{ContextOS} $|$ \href{https://github.com/devpatel301/ContextOS}{\extlinkicon}}{June 2026 - Present}
+      \resumeItemListStart
+      % \resumeItem{Engineered a 4-tier \textbf{hierarchical memory manager} (working/episodic/semantic/archived) for an \textbf{ML inference platform}, reducing downstream token overhead by \textbf{85\%} through semantic caching.}
+      % \resumeItem{Designed a budget-aware \textbf{context scheduler} utilizing vector-based \textbf{feature engineering} to automate retrieval and eliminate redundant \textbf{LLM} calls.}
+      % \resumeItem{Shipped a \textbf{FastAPI}-based dashboard for \textbf{scaling model inference} pipelines, tracking latency and token usage.}
+      
+      % \resumeItem{Engineered a 4-tier \textbf{hierarchical memory manager} (working/episodic/semantic/archived) for an \textbf{ML inference platform}, reducing downstream token overhead by \textbf{85\%} through semantic caching.}
+      % \resumeItem{Designed a budget-aware \textbf{context scheduler} utilizing vector-based \textbf{feature engineering} to automate retrieval.}
+      % \resumeItem{Shipped a FastAPI-based observability dashboard and benchmark harness for \textbf{scaling model inference} pipelines.}
+      
+      \resumeItem{Engineered a \textbf{Hierarchical Memory System} (working, episodic, semantic, archived) mimicking OS caching to virtualize context windows, reducing average token footprint by \textbf{65\%} per session.}
+      \resumeItem{Developed a budget-aware \textbf{Context Scheduler} with \textbf{Semantic Cache} to eliminate \textbf{redundant LLM calls}, reducing query latency to \textbf{sub-15ms}.}
+      \resumeItem{Shipped an \textbf{Adaptive RAG} pipeline with a background \textbf{Memory Garbage Collector} (removing 95\% of duplicate blocks) and a real-time \textbf{Observability Dashboard} tracking latency and token usage.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+          {\textbf{Docs++ (Distributed Document Editor)} $|$ \href{https://github.com/devpatel301/Docs-Plus-Plus}{\extlinkicon}}{October 2025 - November 2025}
           \resumeItemListStart
-            \resumeItem{Built a 3-tier group expense splitting application using \textbf{React}, \textbf{Node.js}, and \textbf{MongoDB}.}
-            \resumeItem{Reduced settlement complexity to at most n-1 edges using \textbf{graph-based debt netting} across n transactions.}
-            \resumeItem{Designed a responsive UI with real-time updates across 4 modules: groups, expenses, balances, and settlements.}
+            \resumeItem{Built a collaborative document editor supporting \textbf{10+ concurrent users} with \textbf{sentence-level locking}, implementing \textbf{custom application-layer protocols} over \textbf{TCP sockets}.}
+            \resumeItem{Optimized metadata lookup latency to \textbf{sub-1ms} using \textbf{LRU caching} and \textbf{Trie-based indexing} to mitigate performance jitter.}
           \resumeItemListEnd
+          % \resumeProjectHeading
+          % {\textbf{xv6 Demand Paging} $|$ \href{https://github.com/devpatel301/xv6-Demand-Paging}{\extlinkicon}}{September 2025 - October 2025}
+          % \resumeItemListStart
+          %   \resumeItem{Implemented \textbf{demand paging} in xv6, enabling \textbf{lazy allocation} and on-demand loading for heap, stack, and executable accesses.}
+          %   \resumeItem{Added \textbf{FIFO page replacement}, swap-in/swap-out support, and a \textbf{memstat} syscall, supporting up to \textbf{1024 swap pages (4MB per process)} and validating behavior across \textbf{6 xv6 test programs}.}
+          % \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{C-Shell (Unix Shell)} $|$ \href{https://github.com/devpatel301/C-Shell}{\extlinkicon}}{August 2025 - September 2025}
+          \resumeItemListStart
+            \resumeItem{Developed a Unix-like shell with AST-based parsing, \textbf{pipelines}, and \textbf{job control} to manage resources at OS level.}
+            \resumeItem{Added \textbf{3 core controls}: I/O redirection, background jobs, and signal handling for process management.}
+          \resumeItemListEnd
+      
+                
+          %       \resumeProjectHeading
+          % {\textbf{Splitco (Expense Manager)} $|$ \href{https://github.com/shaurya-kochar/splitco/}{\extlinkicon}}{December 2025 -- Present}
+          % \resumeItemListStart
+          %   \resumeItem{Built a 3-tier group expense splitting application using \textbf{React}, \textbf{Node.js}, and \textbf{MongoDB}.}
+          %   \resumeItem{Reduced settlement complexity to at most n-1 edges using \textbf{graph-based debt netting} across n transactions.}
+          %   \resumeItem{Designed a responsive UI with real-time updates across 4 modules: groups, expenses, balances, and settlements.}
+          % \resumeItemListEnd
       \resumeProjectHeading
           {\textbf{Agri-Bhasha Toolkit} $|$ Megathon 2025 $|$ \href{https://github.com/devpatel301/agri-bhasha-test-frontend}{\extlinkicon}}{October 2025}
           \resumeItemListStart
             % \resumeItem{Engineered a multilingual agricultural assistant using Bhashini API with OCR-based extraction for 22 Indian languages.}
-            \resumeItem{Shipped a 3-service deployment stack (frontend, backend, database) across \textbf{Vercel} and \textbf{Render}.}
             \resumeItem{Collaborated with a 5-person team to engineer a multilingual agricultural assistant using \textbf{Bhashini API} with \textbf{OCR}-based extraction for \textbf{22 Indian languages}.}
+            \resumeItem{Shipped a deployment stack  across \textbf{Vercel} and \textbf{Render} within a 24-hour hackathon window.}
           \resumeItemListEnd
-      \resumeProjectHeading
-          {\textbf{Docs++ (Distributed Document Editor)} $|$ \href{https://github.com/devpatel301/Docs-Plus-Plus}{\extlinkicon}}{October 2025 -- November 2025}
-          \resumeItemListStart
-            \resumeItem{Built a collaborative document editor supporting \textbf{10+ concurrent users} with \textbf{sentence-level locking} over \textbf{TCP sockets}.}
-            \resumeItem{Reduced metadata lookup latency to \textbf{sub-1ms} using \textbf{LRU caching} and \textbf{Trie-based indexing}.}
-          \resumeItemListEnd
+      
       \resumeProjectHeading
           {\textbf{UniGate (Campus Security Management)} $|$ \href{https://github.com/aryamirani/UniGate}{\extlinkicon}}{January 2026}
           \resumeItemListStart
             \resumeItem{Coordinated with campus authorities to develop a \textbf{QR-based campus gate system} with \textbf{3-role workflows} (students, guards, admins) and leave tracking via IIIT CAS SSO.}
-            \resumeItem{Integrated \textbf{Supabase Realtime DB} for live approvals and \textbf{WhatsApp Web.js} for automated delivery and overstay notifications.}
+            \resumeItem{Integrated \textbf{Supabase DB} for live approvals and \textbf{WhatsApp Web.js} for automated delivery and overstay alerts.}
           \resumeItemListEnd
-          \resumeProjectHeading
-          {\textbf{Smart Glove} $|$ \href{https://smart-glove.web.app/}{\extlinkicon}}{February 2025 -- April 2025}
-          \resumeItemListStart
-            \resumeItem{Designed an IoT-based wearable smart glove using \textbf{IMU}, \textbf{Flex sensor}, and \textbf{ESP32} to support \textbf{5+ gesture-driven commands}.}
-            \resumeItem{Evaluated gesture-to-command mappings through iterative testing achieving \textbf{100\% accuracy}, providing accessibility for Smart Home/Device control.}
-          \resumeItemListEnd
-        % \resumeProjectHeading
-        %   {\textbf{C-Shell (Unix Shell)} $|$ \emph{Systems Project} $|$ \href{https://github.com/devpatel301/C-Shell}{\underline{Link}}}{}
-        %   \resumeItemListStart
-        %     \resumeItem{Developed a Unix-like shell with AST-based parsing, pipelines, and job control.}
-        %     \resumeItem{Added 3 core controls: I/O redirection, background jobs, and signal handling for process management.}
-        %   \resumeItemListEnd
+          % \resumeProjectHeading
+          % {\textbf{Smart Glove} $|$ \href{https://smart-glove.web.app/}{\extlinkicon}}{February 2025 -- April 2025}
+          % \resumeItemListStart
+          %   \resumeItem{Designed an IoT-based wearable smart glove using \textbf{IMU}, \textbf{Flex sensor}, and \textbf{ESP32} to support \textbf{5+ gesture-driven commands}.}
+          %   \resumeItem{Evaluated gesture-to-command mappings through iterative testing achieving \textbf{100\% accuracy}, providing accessibility for Smart Home/Device control.}
+          % \resumeItemListEnd
+        
         
     \resumeSubHeadingListEnd
 
@@ -192,9 +222,9 @@
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: C, C++, Python, HTML/CSS, JavaScript, TypeScript, SQL, Bash, x86-64 Assembly} \\
-     \textbf{Frameworks}{: React, Vite, Flask, Node.js, Express.js} \\
-     \textbf{Tools \& Platforms}{: Docker, Git, GitHub, Wireshark, Postman, LaTeX, Figma, MongoDB, MySQL} \\
+     \textbf{Languages}{: C, C++, x86-64 Assembly, Python, HTML/CSS, JavaScript, TypeScript, SQL, Bash} \\
+     \textbf{Frameworks}{: React, Vite, Flask, Node.js, Express.js, FastAPI} \\
+     \textbf{Tools \& Platforms}{: Wireshark, Docker, Git, GitHub, Postman, LaTeX, Figma, MongoDB, MySQL} \\
      \textbf{Libraries}{: NumPy, Pandas, Matplotlib} \\
     %  \textbf{Domains}{: Full Stack Dev, AI/ML, Neural Networks, Deep Learning, Cybersecurity}
     }}
@@ -205,6 +235,8 @@
 \section{Achievements}
   \resumeItemListStart
     \resumeItem
+      {JEE Mains 2024 - AIR 1139 (Top 0.1\%) $|$ JEE Advanced 2024 - AIR 4199 (Top 2\%).}{}
+    \resumeItem
       {Top 20 Finalist, Megathon 2025 (Agri-Bhasha Toolkit) -- IIIT H's largest hackathon with 1000+ participants.}{}
     % \resumeProjectHeading
     %   {\small Solved 50\%+ problems at Atlassian Fasttrack Hackathon.}{}
@@ -212,8 +244,6 @@
       {Marketing and Social Media Head, The Gaming Club -- largest club at IIIT Hyderabad with 1200+ followers.}{}
       \resumeItem
       {Coordinated cultural activities for interhouse competitions as a captain of Prithvi House, Cultural Council.}{}
-    \resumeItem
-      {JEE Mains 2024 - AIR 1139 (Top 0.1\%) $|$ JEE Advanced 2024 - AIR 4199 (Top 2\%).}{}
   \resumeItemListEnd
 
   %-----------LEADERSHIP ROLES-----------
